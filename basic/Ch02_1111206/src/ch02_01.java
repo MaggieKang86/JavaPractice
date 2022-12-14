@@ -7,7 +7,7 @@
  *
  * @author user
  */
-public class ch02_01 {
+public class Ch02_01 {
     //bit 01
     //2bit
     //byte 8bit   -128~127
