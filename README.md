@@ -1,5 +1,5 @@
 ## Java 先修基礎程式設計
-This is maggie's fucking new work for living.
+This is maggie's new fucking work for living.
 
 ### 如何提交程式？
 
