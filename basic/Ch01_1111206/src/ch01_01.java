@@ -7,7 +7,7 @@
  *
  * @author user
  */
-public class ch01_01 {
+public class Ch01_01 {
     public static void main(String[] args){
         System.out.println("Ken");
     }
