@@ -18,6 +18,7 @@ public class Ch4_4 {
         System.out.println("請輸入帳號:");
         String g1 = scan.next();  //等待輸入
         System.out.println("帳號:"+g1);
+        
 
     }
 }
