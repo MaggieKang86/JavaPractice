@@ -1,13 +1,13 @@
 ## Java 先修基礎程式設計
 This is maggie's new fucking work for living.
 
-### 複製此倉儲（Repository）
+### 克隆此倉儲（Repository）
 ```
 git clone https://github.com/MaggieKang86/homework-base.git
 ```
 ### 如何提交程式？
 
-1. git pull：從遠端獲取代碼並合併本地的版本。
+1. git pull：從遠端倉儲（Repository）分支獲取更新並與本地倉儲（Repository）分支合併
     ```
     git pull
     ```
@@ -27,12 +27,12 @@ git clone https://github.com/MaggieKang86/homework-base.git
    git add .
    ```
    
-5. git commit：提交暫存區到本地倉庫。
+5. git commit：提交暫存區到本地倉儲（Repository）。
    ```
    git commit -m '<填寫提交說明>'
    ```
 
-6. git push：上傳遠端代碼並合併。
+6. git push：將本地分支的更新，推送到遠端倉儲（Repository）上 。
    ```
    git push
    ```   
