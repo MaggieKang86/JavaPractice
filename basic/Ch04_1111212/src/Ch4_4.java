@@ -16,10 +16,17 @@ public class Ch4_4 {
         double d2 = scan.nextDouble();  //等待輸入
         System.out.println(d1+":"+d2);*/
 
-        Scanner scan = new Scanner(System.in);
+        /*Scanner scan = new Scanner(System.in);
         System.out.println("請輸入帳號:");
         String g1 = scan.next();  //等待輸入
-        System.out.println("帳號:" + g1);
+        System.out.println("帳號:" + g1);*/
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("請輸入訊息：");
+        //使用enter斷行做分割
+        String msg = scan.nextLine();
+        System.out.println("msg:"+msg);
+        
     }
 
 }
