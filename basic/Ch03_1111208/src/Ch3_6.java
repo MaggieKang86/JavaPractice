@@ -25,12 +25,12 @@ public class Ch3_6 {
         */
         k += 5;  // k+5
         System.out.println(k);
-        k -= 3;  //k = k - 3
+        k -= 3;  // k = k - 3
         System.out.println(k);
 
-        //System.out.println(i); 
-        //i++;
-        //System.out.println(i);
+        // System.out.println(i);
+        // i++;
+        // System.out.println(i);
     }
 
 }
