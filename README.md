@@ -35,6 +35,4 @@ git clone https://github.com/MaggieKang86/homework-base.git
 6. git push：將本地分支的更新，推送到遠端倉儲（Repository）上 。
    ```
    git push
-   ```   
-"# practice" 
-"# practice" 
+   ```
