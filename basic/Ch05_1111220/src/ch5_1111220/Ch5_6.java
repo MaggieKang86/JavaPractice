@@ -16,7 +16,7 @@ public class Ch5_6 {
         if (i == 3){
         break;
         }
-            for(int = k; k <= 3; k++) {
+            for(int k = 1; k <= 3; k++) {
             System.out.printf("Body %d_%d",k,i);
             
             
