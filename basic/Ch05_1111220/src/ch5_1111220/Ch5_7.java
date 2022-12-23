@@ -5,7 +5,7 @@ public class Ch5_7 {
         int count = 1;
         while(count <= 10) {
         System.out.println(count);
-        count++;
+        count++; //
         }
     }
 }
