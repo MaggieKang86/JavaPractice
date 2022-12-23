@@ -1,14 +1,15 @@
-package ch5_1111220;
-
-public class Ch5_3 {
+public class Ch5_6 {
 
     public static void main(String[] args) {
         for (int i = 1; i <= 5; i++) {
             System.out.println("Start:" + i);
             if (i == 3) {
-                // break; //離開迴圈
-                continue; //不往下運行
+                break;
             }
+            for (int k = 1; k <= 3; k++) {
+                System.out.printf("Body %d_%d", k, i);
+            }
+            System.out.println();
             System.out.println("End:" + i);
         }
     }
