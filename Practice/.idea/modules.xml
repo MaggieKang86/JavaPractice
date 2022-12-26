@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ch01_1111206/Ch01_1111206.iml" filepath="$PROJECT_DIR$/Ch01_1111206/Ch01_1111206.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch02_1111207/Ch02_1111207.iml" filepath="$PROJECT_DIR$/Ch02_1111207/Ch02_1111207.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch03_1111208/Ch03_1111208.iml" filepath="$PROJECT_DIR$/Ch03_1111208/Ch03_1111208.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch04_1111212/Ch04_1111212.iml" filepath="$PROJECT_DIR$/Ch04_1111212/Ch04_1111212.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch05_1111216/Ch05_1111216.iml" filepath="$PROJECT_DIR$/Ch05_1111216/Ch05_1111216.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ch05_1111220/Ch05_1111220.iml" filepath="$PROJECT_DIR$/Ch05_1111220/Ch05_1111220.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/basic.iml" filepath="$PROJECT_DIR$/.idea/basic.iml" />
+    </modules>
+  </component>
+</project>
