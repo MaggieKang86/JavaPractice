@@ -1,11 +1,11 @@
 ## Java 程式設計基礎練習
 This is maggie's new fucking work for living.
 
-### 資料夾 
-#### basic
+### 資料夾說明
+#### basic資料夾
 Java先修基礎程式設計課程，共5堂課
 
-#### OCP
+#### OCP資料夾
 Java OCP JP程式設計師認證課程，共26堂課
 
 ### 克隆此倉儲（Repository）
@@ -45,7 +45,7 @@ git clone https://github.com/MaggieKang86/JavaPractice.git
    ```
 
 ### .gitignore 忽略檔案
-1. 右鍵點擊Git Bash Here，輸入`touch .gitignore`，新增.gitignore文件
+1. 在.git同層資料夾右鍵點擊Git Bash Here，輸入`touch .gitignore`，新增.gitignore文件
     ```
     $ touch .gitignore
     ```
@@ -53,12 +53,10 @@ git clone https://github.com/MaggieKang86/JavaPractice.git
 2. 編輯.gitignore文件添加欲忽略檔案
     ```
    # 檔案名稱 .gitignore
-   # 忽略project的配置信息，包括描述、編碼、歷史紀錄、版本控制信息等。
+   # 忽略project的配置信息。
    .idea/
    # 忽略模塊文件
    *.iml
    # 忽略classPath
    out/
     ```
-   
-3. 
