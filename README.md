@@ -1,9 +1,16 @@
-## Java 先修基礎程式設計
+## Java 程式設計基礎練習
 This is maggie's new fucking work for living.
+
+### 資料夾 
+#### basic
+Java先修基礎程式設計課程，共5堂課
+
+#### OCP
+Java OCP JP程式設計師認證課程，共26堂課
 
 ### 克隆此倉儲（Repository）
 ```
-git clone https://github.com/MaggieKang86/homework-base.git
+git clone https://github.com/MaggieKang86/JavaPractice.git
 ```
 ### 如何提交程式？
 
