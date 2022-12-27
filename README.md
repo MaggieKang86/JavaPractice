@@ -24,7 +24,7 @@ git clone https://github.com/MaggieKang86/JavaPractice.git
    git status
    ```
 
-4. git add：添加檔案到暫存區。
+3. git add：添加檔案到暫存區。
    ```
    git add <檔案名稱>
    ```
@@ -34,12 +34,31 @@ git clone https://github.com/MaggieKang86/JavaPractice.git
    git add .
    ```
    
-5. git commit：提交暫存區到本地倉儲（Repository）。
+4. git commit：提交暫存區到本地倉儲（Repository）。
    ```
    git commit -m '<填寫提交說明>'
    ```
 
-6. git push：將本地分支的更新，推送到遠端倉儲（Repository）上 。
+5. git push：將本地分支的更新，推送到遠端倉儲（Repository）上 。
    ```
    git push
    ```
+
+### .gitignore 忽略檔案
+1. 右鍵點擊Git Bash Here，輸入`touch .gitignore`，新增.gitignore文件
+    ```
+    $ touch .gitignore
+    ```
+
+2. 編輯.gitignore文件添加欲忽略檔案
+    ```
+   # 檔案名稱 .gitignore
+   # 忽略project的配置信息，包括描述、編碼、歷史紀錄、版本控制信息等。
+   .idea/
+   # 忽略模塊文件
+   *.iml
+   # 忽略classPath
+   out/
+    ```
+   
+3. 
