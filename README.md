@@ -1,5 +1,5 @@
 ## Java 程式設計基礎練習
-This is maggie's new fucking work for living.
+maggie的隨意note：https://gusty-nerve-f23.notion.site/Java-9dcef7225b4a4feab346a1ddb5215654
 
 ### 資料夾說明
 #### basic資料夾
