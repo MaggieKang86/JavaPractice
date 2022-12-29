@@ -3,7 +3,6 @@ package com.sample;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
         // String(類別，字串使用一對雙引號["文字"]
         String s1 = "JAVA";
         String s2 = "java";
