@@ -14,7 +14,7 @@ public class Main {
 
         // 比較字串內容
         System.out.println("s1.equals(s5)　大小寫不同：" + s1.equals(s5));
-        System.out.println("s1.equals(s5)　忽略大小寫：" + s1.equalsIgnoreCase(s5));
+        System.out.println("s1.equalsIgnoreCase(s5)　忽略大小寫：" + s1.equalsIgnoreCase(s5));
         System.out.println("-------------------");
 
         // 字串串接
