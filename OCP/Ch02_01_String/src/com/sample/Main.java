@@ -51,7 +51,7 @@ public class Main {
         System.out.println("str 字串長度：" + str.length());
         System.out.println("第 10 個字元：" + str.charAt(9));
         System.out.println("轉大寫：" + str.toUpperCase());
-        System.out.println("轉大寫：" + str.toLowerCase());
+        System.out.println("轉小寫：" + str.toLowerCase());
 
         // 去除首尾空白
         // 因String內容不可變，故需重新給值
