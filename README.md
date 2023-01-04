@@ -2,7 +2,7 @@
 
 ### 📌 Cloning this repository
 ```
-$ git clone https://github.com/MaggieKang86/JavaPractice.git
+git clone https://github.com/MaggieKang86/java-practice.git
 ```
 
 #### 📝 [maggie的隨意note](https://gusty-nerve-f23.notion.site/Java-9dcef7225b4a4feab346a1ddb5215654)
