@@ -48,8 +48,53 @@ public class MainClass {
         for (int i : iArray) {
             System.out.printf("%d | ", i);
         }
-
         System.out.println("\n------------------");
+
+        // int[] test1 = new int[];           // 錯，沒有給記憶體空間  []裡面一定要給值
+        int test2[] = new int[1];             // 對
+        int []test3 = new int[2];             // 對
+        // int[] test4 = new int[2] {1, 2};   // 錯，後方{}已有給資料，[]不須再給陣列空間
+        int[] test4 = new int[] {1, 2};       // 對
+        int[] test5 = new int[] {1, 2, 3};    // 對
+        int[] test6;
+        // test6 = {1, 2, 3};                 // 錯，不可將陣列宣告分開寫
+        test6 = new int[] {1, 2, 3};
+        int[] test7 = new int[] {};           // 對，同int[] = new int[0];
+
+        //-----------------------------------------------
+
+        // 用Book型別宣告陣列
+        Book[] books = new Book[3];
+        System.out.println("books[0]：" + books[0]);
+
+        // 設值
+        books[0] = new Book("Java SE 8", 800);
+        books[1] = new Book("Python 3.9", 700);
+        books[2] = new Book("Android 10", 750);
+
+        // 取物件：增強型 for 迴圈
+        // for(型別 暫時性變數：陣列或集合) {...}
+        for (Book book : books) {
+            System.out.println(book.name + "\t" + book.price);
+        }
+        System.out.println("-------------------------");
+
+        // 多維陣列
+        int [] [] ids = {{11, 12}, {21, 22}, {31, 32}};
+
+        // 取值
+        System.out.println("ids[1][0]：" + ids[1][0]);
+        System.out.println("ids[2][1]：" + ids[2][1]);
+        System.out.println("-------------------------");
+
+        // 巢狀迴圈帶出所有值
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 2; j++){
+                System.out.printf("%d ", ids[i][j]);
+            }
+            System.out.println();
+        }
+
     }
 
 }
