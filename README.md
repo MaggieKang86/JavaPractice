@@ -11,7 +11,7 @@ git clone https://github.com/MaggieKang86/java-practice.git
 - #### 📁basic資料夾
    Java先修基礎程式設計課程，共5堂課
 
-- #### 📁OCP資料夾
+- #### 📁資料夾
    Java OCP JP程式設計師認證課程，共26堂課
 
 
