@@ -1,10 +1,10 @@
-public class Main {
+package com.sample;
+
+public class MainClass {
 
     public static void main(String[] args) {
-
         // 宣告、實作、初始化一維陣列
         // 型別[] 陣列名稱 = {元素1, 元素2, ...};
-
         int[] ages = {25, 27, 48};
         System.out.println("ages：" + ages);
 
@@ -18,8 +18,8 @@ public class Main {
         ages[1] = 30;
 
         // 使用一般 for 迴圈制定規則將所有陣列內的東西印出來，就不用一直print
-        for(int i=0; i<3; i++){  //i = 0, 1, 2
-        System.out.println((i+1) + "." + ages[i]);
+        for (int i = 0; i < 3; i++) {  //i = 0, 1, 2
+            System.out.println((i + 1) + "." + ages[i]);
         }
         System.out.println("------------------");
 
@@ -45,16 +45,11 @@ public class Main {
 
         // 增強型 for 迴圈
         // for(型別 暫時性變數：陣列或集合) {...}
-        for(int i : iArray) {
-        System.out.printf("%d | ", i);
+        for (int i : iArray) {
+            System.out.printf("%d | ", i);
         }
+
         System.out.println("\n------------------");
-
-
-
-
-
-
-
     }
+
 }
