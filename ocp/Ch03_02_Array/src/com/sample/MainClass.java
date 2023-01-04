@@ -94,6 +94,37 @@ public class MainClass {
             }
             System.out.println();
         }
+        System.out.println("-------------------------");
+
+        // 增強型迴圈
+        for(int[] temp : ids) {
+            for(int i : temp) {
+                System.out.printf("%d " , i);
+            }
+            System.out.println();
+        }
+
+        System.out.println("-------------------------");
+
+        int [] [] b = {{11, 12, 13}, {21, 22}, {31, 32, 33, 34}};
+        for( int i = 0; i < b.length; i++) {
+            for( int j = 0; j < b[i].length; j++) {
+                System.out.printf("%d ", b[i][j]);
+            }
+            System.out.println();
+        }
+
+        System.out.println("-------------------------");
+
+        // 宣告陣列長度：當陣列長度相同時
+        String[][] test8 = new String[3][2];
+
+        // 宣告陣列長度：當陣列長度不相同時
+        String[][] test9 = new String[3][];
+        test9[0] = new String[3];
+        test9[1] = new String[]["Lisa", "Tom"];
+        test9[2] = new String[5];
+
 
     }
 
