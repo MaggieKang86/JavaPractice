@@ -1,4 +1,5 @@
 package com.sample;
+
 import java.util.Random;
 
 public class MainClass {
