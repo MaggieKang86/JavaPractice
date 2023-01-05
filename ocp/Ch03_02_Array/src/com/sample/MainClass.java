@@ -122,7 +122,7 @@ public class MainClass {
         // 宣告陣列長度：當陣列長度不相同時
         String[][] test9 = new String[3][];
         test9[0] = new String[3];
-        test9[1] = new String[]["Lisa", "Tom"];
+        test9[1] = new String[]{"Lisa", "Tom"};
         test9[2] = new String[5];
 
 
