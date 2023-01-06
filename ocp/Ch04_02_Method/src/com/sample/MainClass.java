@@ -3,12 +3,12 @@ package com.sample;
 public class MainClass {
 
     public static void main(String[] args) {
-
         // 呼叫 類別成員 【欄位】
         // 呼叫類別成員語法：類別名稱.類別成員
         System.out.println("int 最大值：" + Integer.MAX_VALUE);
         // 呼叫 類別成員 【方法】
         System.out.println("亂數：" + Math.random());
+<<<<<<< HEAD
 
         // 呼叫物件成員語法：物件參考名稱.物件成員
         // Step1：先建立物件
@@ -31,5 +31,8 @@ public class MainClass {
         Book.doTest(); // 類別
 
 
+=======
+>>>>>>> 63fe2b957a9999038841b7b496fc009acaf34f36
     }
+
 }

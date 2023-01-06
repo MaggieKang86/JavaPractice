@@ -8,10 +8,10 @@ public class MainClass {
         Scanner scanner = new Scanner(System.in);
         System.out.println("輸入 Apple | Kiwi | Orange：");
 
-        String keyin = scanner.next();
+        String keyIn = scanner.next();
         final String KIWI = "Kiwi";  //常數
 
-        switch (keyin) {
+        switch (keyIn) {
             case "Apple":
                 System.out.println("蘋果");
                 break;
