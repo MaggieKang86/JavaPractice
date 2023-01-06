@@ -8,7 +8,6 @@ public class MainClass {
         System.out.println("int 最大值：" + Integer.MAX_VALUE);
         // 呼叫 類別成員 【方法】
         System.out.println("亂數：" + Math.random());
-<<<<<<< HEAD
 
         // 呼叫物件成員語法：物件參考名稱.物件成員
         // Step1：先建立物件
@@ -30,9 +29,26 @@ public class MainClass {
         System.out.println("呼叫類別成員 doTest()...");
         Book.doTest(); // 類別
 
+        System.out.println("--------------");
 
-=======
->>>>>>> 63fe2b957a9999038841b7b496fc009acaf34f36
+        // 呼叫同類別中的類別成員
+        calculated1(10);
+
+        // 呼叫物件成員
+        // calculated2(5, 3); 直接呼叫是錯誤的
+        MainClass mclass = new MainClass();  // 建立物件
+        mclass.calculate2(5, 3);  // 透過物件呼叫物件成員
+        
+    }
+
+    // 類別成員
+    private static void calculated1(int x) {
+        System.out.println(x + " / 2 = " + (x/2));
+    }
+
+    // 物件成員
+    private void calculate2(int x, int y) {
+        System.out.println(x + " + " + y + " = " + (x+y));
     }
 
 }
