@@ -16,7 +16,6 @@ public class MainClass {
 
         // 修改、設值：陣列名稱[索引值index] = 值
         ages[1] = 30;
-
         // 使用一般 for 迴圈制定規則將所有陣列內的東西印出來，就不用一直print
         for (int i = 0; i < 3; i++) {  //i = 0, 1, 2
             System.out.println((i + 1) + "." + ages[i]);
@@ -52,14 +51,14 @@ public class MainClass {
 
         // int[] test1 = new int[];           // 錯，沒有給記憶體空間  []裡面一定要給值
         int test2[] = new int[1];             // 對
-        int []test3 = new int[2];             // 對
+        int[] test3 = new int[2];             // 對
         // int[] test4 = new int[2] {1, 2};   // 錯，後方{}已有給資料，[]不須再給陣列空間
-        int[] test4 = new int[] {1, 2};       // 對
-        int[] test5 = new int[] {1, 2, 3};    // 對
+        int[] test4 = new int[]{1, 2};       // 對
+        int[] test5 = new int[]{1, 2, 3};    // 對
         int[] test6;
         // test6 = {1, 2, 3};                 // 錯，不可將陣列宣告分開寫
-        test6 = new int[] {1, 2, 3};
-        int[] test7 = new int[] {};           // 對，同int[] = new int[0];
+        test6 = new int[]{1, 2, 3};
+        int[] test7 = new int[]{};           // 對，同int[] = new int[0];
 
         //-----------------------------------------------
 
@@ -80,7 +79,7 @@ public class MainClass {
         System.out.println("-------------------------");
 
         // 多維陣列
-        int [] [] ids = {{11, 12}, {21, 22}, {31, 32}};
+        int[][] ids = {{11, 12}, {21, 22}, {31, 32}};
 
         // 取值
         System.out.println("ids[1][0]：" + ids[1][0]);
@@ -88,8 +87,8 @@ public class MainClass {
         System.out.println("-------------------------");
 
         // 巢狀迴圈帶出所有值
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 2; j++){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
                 System.out.printf("%d ", ids[i][j]);
             }
             System.out.println();
@@ -97,18 +96,18 @@ public class MainClass {
         System.out.println("-------------------------");
 
         // 增強型迴圈
-        for(int[] temp : ids) {
-            for(int i : temp) {
-                System.out.printf("%d " , i);
+        for (int[] temp : ids) {
+            for (int i : temp) {
+                System.out.printf("%d ", i);
             }
             System.out.println();
         }
 
         System.out.println("-------------------------");
 
-        int [] [] b = {{11, 12, 13}, {21, 22}, {31, 32, 33, 34}};
-        for( int i = 0; i < b.length; i++) {
-            for( int j = 0; j < b[i].length; j++) {
+        int[][] b = {{11, 12, 13}, {21, 22}, {31, 32, 33, 34}};
+        for (int i = 0; i < b.length; i++) {
+            for (int j = 0; j < b[i].length; j++) {
                 System.out.printf("%d ", b[i][j]);
             }
             System.out.println();
@@ -124,8 +123,6 @@ public class MainClass {
         test9[0] = new String[3];
         test9[1] = new String[]{"Lisa", "Tom"};
         test9[2] = new String[5];
-
-
     }
 
 }

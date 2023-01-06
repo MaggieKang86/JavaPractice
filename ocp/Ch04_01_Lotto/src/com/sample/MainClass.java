@@ -5,7 +5,6 @@ import java.util.Random;
 public class MainClass {
 
     public static void main(String[] args) {
-
         /*
         思考如何製作：
         Step1：使用巢狀迴圈產生號碼
@@ -32,23 +31,23 @@ public class MainClass {
             boo = false; // 先設定boo為false代表數字沒有重複
             // 使用巢狀迴圈產生號碼
             for (int i = 0; i < lotto.length; i++) {
-                lotto[i] = new Random().nextInt(49) + 1; //產生亂數1~49中任意整數
+                lotto[i] = new Random().nextInt(49) + 1; // 產生亂數1~49中任意整數
             }
 
             // 幫迴圈命名
             outer:
             // 使用巢狀迴圈檢查是否重複
             // 產生6個不同數字後，使用"宣告臨時變數"去排順序
-            for(int i = 0; i < lotto.length - 1; i++) {
+            for (int i = 0; i < lotto.length - 1; i++) {
                 for (int j = i + 1; j < lotto.length; j++) {
                     //檢查重複
-                    if(lotto[i] == lotto[j]) {
+                    if (lotto[i] == lotto[j]) {
                         System.out.printf("%02d --> 索引位置 [%d] 和 [%d] 相同%n", lotto[j], i, j);
                         boo = true; // true代表數字有重複
                         break outer; // 檢查若有重複乙次數字時，即中斷最外層迴圈outer並重頭來
                     }
                     //比較大小
-                    if(lotto[i] > lotto[j]) {
+                    if (lotto[i] > lotto[j]) {
                         int temp = lotto[i];
                         lotto[i] = lotto[j];
                         lotto[j] = temp;
@@ -59,10 +58,9 @@ public class MainClass {
         } while (boo); // 如果boo為true，do-while重新執行
 
         // 顯示號碼：使用增強型迴圈來顯示陣列內容
-        for(int i : lotto) {
+        for (int i : lotto) {
             System.out.printf("%02d | ", i);
         }
-
-
     }
+
 }
