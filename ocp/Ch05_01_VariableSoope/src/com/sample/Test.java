@@ -12,7 +12,6 @@ public class Test {
 
         item = "# " + temp;
         System.out.println("item = " + item);
-
     } // 參數 i 有效範圍結束、區域變數 temp 有效範圍結束
 
     public String getItem() {
