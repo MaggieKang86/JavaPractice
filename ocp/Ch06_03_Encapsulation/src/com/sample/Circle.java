@@ -8,7 +8,7 @@ public class Circle {
 
     // 公開的方法：設值
     public void setRadius(double radius) {
-        if(check(radius)) {
+        if (check(radius)) {
             this.radius = radius;
         } else {
             this.radius = 0;
@@ -18,7 +18,7 @@ public class Circle {
 
     // 私有方法：檢查數值是否為正數
     private boolean check(double number) {
-        if(number >= 0) return true;
+        if (number >= 0) return true;
         else return false;
     }
 
@@ -30,7 +30,5 @@ public class Circle {
     public double getArea() {
         return PI * radius * radius;
     }
-
-
 
 }

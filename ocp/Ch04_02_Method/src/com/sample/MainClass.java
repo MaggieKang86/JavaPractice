@@ -38,7 +38,7 @@ public class MainClass {
         // calculated2(5, 3); 直接呼叫是錯誤的
         MainClass mclass = new MainClass();  // 建立物件
         mclass.calculate2(5, 3);  // 透過物件呼叫物件成員
-        
+
     }
 
     // 類別成員

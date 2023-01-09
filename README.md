@@ -8,10 +8,10 @@ git clone https://github.com/MaggieKang86/java-practice.git
 #### 📝 [maggie的隨意note](https://gusty-nerve-f23.notion.site/Java-9dcef7225b4a4feab346a1ddb5215654)
 
 ### 📁 資料夾說明
-- #### 📁basic資料夾
+- #### 📁[basic資料夾](https://github.com/MaggieKang86/java-practice/tree/main/basic)
    Java先修基礎程式設計課程，共5堂課
 
-- #### 📁ocp資料夾
+- #### 📁[ocp資料夾](https://github.com/MaggieKang86/java-practice/tree/main/ocp)
    Java OCP JP程式設計師認證課程，共26堂課
 
 
@@ -65,3 +65,5 @@ git clone https://github.com/MaggieKang86/java-practice.git
    ```
    git push
    ```
+-->
+

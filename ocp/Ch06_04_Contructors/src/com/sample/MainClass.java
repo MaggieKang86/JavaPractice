@@ -19,4 +19,5 @@ public class MainClass {
         System.out.printf("book3：[%d, %s, %.2f, %s]%n", book3.getId(), book3.getName(), book3.getPrice(), book3.getDate());
         System.out.println("--------------");
     }
+
 }

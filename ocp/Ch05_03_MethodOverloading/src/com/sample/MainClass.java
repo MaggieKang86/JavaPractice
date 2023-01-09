@@ -3,7 +3,6 @@ package com.sample;
 public class MainClass {
 
     public static void main(String[] args) {
-
         int total_1 = Calculator.sum(50);
         System.out.println("total_1 = " + total_1);
         System.out.println("---------");
@@ -16,6 +15,5 @@ public class MainClass {
         System.out.println("total_3 = " + total_3);
         System.out.println("---------");
     }
-
 
 }

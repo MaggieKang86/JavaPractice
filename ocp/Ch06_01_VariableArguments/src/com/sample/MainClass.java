@@ -10,7 +10,7 @@ public class MainClass {
 
     private static void average(int... scores) {  // 可變動參數
         int total = 0;
-        for(int s : scores) {
+        for (int s : scores) {
             total += s;
         }
         System.out.println("total：" + total);
@@ -21,8 +21,10 @@ public class MainClass {
     // 可變動參數只能寫一組，且只能放在最後一個參數
     // private void test1(int... i, double... d) {}
     // private void test2(String... s, String s1) {}
-    private void test3(int i, String s, double... d) {}
-    private void test4(String s, int i, int... i1) {}
+    private void test3(int i, String s, double... d) {
+    }
 
+    private void test4(String s, int i, int... i1) {
+    }
 
 }

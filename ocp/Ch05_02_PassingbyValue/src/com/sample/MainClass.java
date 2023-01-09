@@ -3,7 +3,6 @@ package com.sample;
 public class MainClass {
 
     public static void main(String[] args) {
-
         int a = 10;
         int b = a;
         System.out.printf("1. a = %d, b = %d%n", a, b);

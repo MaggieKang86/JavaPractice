@@ -1,6 +1,7 @@
 package com.sample;
 
 public class Calculator {
+
     public static int sum(int x, int y) {
         System.out.println("sum(int x, int y)...");
         return x + y;
@@ -15,6 +16,5 @@ public class Calculator {
         System.out.println("int sum(int x)...");
         return x + 10;
     }
-
 
 }
