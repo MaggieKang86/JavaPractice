@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.time.chrono.JapaneseDate;
+import java.time.chrono.MinguoDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
@@ -62,7 +64,22 @@ public class MainClass {
         System.out.println("isEqual(2023-01-20)：" + myDate.isEqual(date3));
         System.out.println("------------------");
 
+        System.out.println("isLeapYear()：" + myDate.isLeapYear());
+        System.out.println("getYear()：" + myDate.getYear());
+        System.out.println("getMonth()：" + myDate.getMonth());
+        System.out.println("getDayOfMonth()：" + myDate.getDayOfMonth());
+        System.out.println("getDayOfWeek()：" + myDate.getDayOfWeek());
+        System.out.println("getDayOfYear()：" + myDate.getDayOfYear());
+        System.out.println("------------------");
 
+        // 計算
+        System.out.println(myDate.plusMonths(1).plusWeeks(3).minusDays(2));
+
+        // 民國年
+        MinguoDate minguoDate = MinguoDate.now();
+        System.out.println("minguoDate：" + minguoDate);
+        JapaneseDate japaneseDate = JapaneseDate.now();
+        System.out.println("japaneseDate" + japaneseDate);
     }
 
 
