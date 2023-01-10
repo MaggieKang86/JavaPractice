@@ -6,7 +6,7 @@ public class MainClass {
 
         Circle cir = new Circle();
         cir.setRadius(10);
-        System.out.printf("cir[r：%.2f, a：%.2f, c：%.2f]：%n" + cir.getRadius(), cir.getArea(), cir.getCircumference());
+        System.out.printf("cir[r:%.2f, a:%.2f, c:%.2f]%n", cir.getRadius(), cir.getArea(), cir.getCircumference());
 
         Cylinder cyl = new Cylinder();
 
