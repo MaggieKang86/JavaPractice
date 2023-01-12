@@ -1,11 +1,8 @@
 package com.sample;
 
-import java.security.spec.RSAOtherPrimeInfo;
-
 public class MainClass {
 
     public static void main(String[] args) {
-
         Magician magician = new Magician();
         magician.setName("哈利波特");
         magician.setLevel(10);
@@ -30,11 +27,9 @@ public class MainClass {
         Role[] roles = new Role[2];
         roles[0] = magician;
         roles[1] = soldier;
-        for(Role r:roles) {
-            System.out.printf("%s\t%d\t%d%n",r.getName(), r.getLevel(), r.getBlood());
+        for (Role r : roles) {
+            System.out.printf("%s\t%d\t%d%n", r.getName(), r.getLevel(), r.getBlood());
         }
-
-
-
     }
+
 }

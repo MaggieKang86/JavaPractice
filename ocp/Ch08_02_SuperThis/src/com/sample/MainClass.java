@@ -11,8 +11,8 @@ public class MainClass {
 
 }
 
- // ---------------------------------------------------
- class SuperClass{
+// ---------------------------------------------------
+class SuperClass {
 
     private String item;
 
@@ -23,11 +23,12 @@ public class MainClass {
     public void display() {
         System.out.println("SuperClass display() item:" + item);
     }
- }
+}
 
- class SubClass extends SuperClass{
+class SubClass extends SuperClass {
 
     public SubClass(String item) {
-         super(item);
-     }
- }
+        super(item);
+    }
+
+}
