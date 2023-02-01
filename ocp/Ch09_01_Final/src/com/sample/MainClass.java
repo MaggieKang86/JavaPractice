@@ -4,8 +4,10 @@ public class MainClass {
 
     public static void main(String[] args) {
 
+    /*
     SubClass sub = new SubClass();
     sub.display();
+    */
 
     }
 
@@ -13,13 +15,14 @@ public class MainClass {
 
 //-------------------------------
 
-class SuperClass{
+final class SuperClass{            // 這個類別不可被繼承
 
-    public void display() {
+    public final void display() {  // 不可被子類別複寫
 
     }
 }
 
+/*
 class SubClass extends SuperClass {
 
     // 欄位
@@ -62,3 +65,4 @@ class SubClass extends SuperClass {
     }
 
 }
+*/
