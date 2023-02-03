@@ -16,6 +16,10 @@ public class MainClass {
         Human human = new Human("陳玟均");
         human.swim();
 
+        Superman superman = new Superman("郭瑞杰");
+        superman.swim();
+        superman.fly();
+
 
     }
 

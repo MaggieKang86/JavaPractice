@@ -1,6 +1,6 @@
 package com.sample;
 
-public abstract class Fish {
+public abstract class Fish implements Swimmer {
 
     protected String name;
     public Fish(String name) {
@@ -12,6 +12,6 @@ public abstract class Fish {
 //    }
 
     // 抽象方法
-    public abstract void swim();
+//    public abstract void swim();
 
 }

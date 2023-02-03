@@ -1,9 +1,11 @@
 package com.sample;
 
-public class Human extends Fish {
+public class Human implements Swimmer {
+
+    private String name;
 
     public Human(String name) {
-        super(name);
+        this.name = name;
     }
 
     @Override
