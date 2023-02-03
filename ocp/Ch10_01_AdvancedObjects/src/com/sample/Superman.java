@@ -15,8 +15,7 @@ public class Superman implements Swimmer, Fly {
 
     @Override
     public void fly() {
-        System.out.printf("超人: %s 在空中飛行%n", name);
+        System.out.printf("超人: %s 在空中飛行，速度%s%n", name, MoveSpeed.SPEED + FlySpeed.SPEED);
     }
-
 
 }
