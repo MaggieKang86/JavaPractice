@@ -12,11 +12,17 @@ public class MainClass {
             doTest();
         } catch (IOException e) {
             System.out.println("main(): " + e);
+        } catch (SQLException ex) {
+            System.out.println("main(): " + ex.getMessage());
+        } catch (MyException ex) {
+            System.out.println("main(): " + ex + ex.getMessage());
+        } catch (Exception ex) {
+            System.out.println(ex);
         }
 
     }
 
-    private static void doTest() throws IOException {
+    private static void doTest() throws IOException, SQLException, MyException {
 
         double random = new Random().nextDouble();
         System.out.println("random: " + random);
@@ -30,10 +36,16 @@ public class MainClass {
         } else if(random >= 0.4) {
             try {
                 // 建立 SQLException 例外物件 ( checked exception )
-                throw new SQLException("SOL 錯誤");             // 利用 try-catch 自行處理
+                throw new SQLException("SQL 錯誤");             // 利用 try-catch 自行處理
             } catch (SQLException ex) {
-                System.out.println("事件紀錄完成");
+                System.out.println("doTest(): 事件紀錄完成");
+                // 錯誤【再】拋給呼叫端
+                throw ex;
             }
+
+        } else if(random >= 0.2) {
+            // 建立 MyException 例外物件 ( checked exception )
+            throw new MyException(2266, "小明");
 
         }
 
