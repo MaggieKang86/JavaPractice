@@ -7,8 +7,9 @@ import java.sql.SQLException;
 
 public class MainClass {
 
-    public static void main(String[] args) {  // 10-32行
+    public static void main(String[] args) {
 
+        /*
         FileInputStream fis = null;
         try {
             doTest();
@@ -23,6 +24,13 @@ public class MainClass {
                     System.out.println(ex);
                 }
             }
+        }
+        */
+
+        try(FileInputStream fis = new FileInputStream("test.txt")) {  // try-with-resourcese
+            doTest();
+        } catch (SQLException | IOException ex) {  // Catching Multiple Exception
+            System.out.println(ex);
         }
         System.out.println("其他程式....");
     }
