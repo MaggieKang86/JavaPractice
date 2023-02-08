@@ -21,7 +21,7 @@ public class ClassC extends ClassA {
         // System.out.println("- a.w = " + a.w);
         // System.out.println("  a.x = " + a.x);
         // System.out.println("% a.y = " + a.y);
-        System.out.println("+ a.z = " + a.z);
+        System.out .println("+ a.z = " + a.z);
     }
 
 }

@@ -9,10 +9,10 @@ public class ClassA {
 
     public void display() {
         System.out.println("ClassA...");
-        System.out.println("-w = " + w);
-        System.out.println(" x = " + x);
-        System.out.println("%y = " + y);
-        System.out.println("+z = " + z);
+        System.out.println("- w = " + w);
+        System.out.println("  x = " + x);
+        System.out.println("% y = " + y);
+        System.out.println("+ z = " + z);
     }
 
 }
