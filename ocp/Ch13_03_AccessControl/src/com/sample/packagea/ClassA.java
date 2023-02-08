@@ -13,7 +13,6 @@ public class ClassA {
         System.out.println(" x = " + x);
         System.out.println("%y = " + y);
         System.out.println("+z = " + z);
-
     }
 
 }
