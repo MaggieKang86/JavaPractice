@@ -1,5 +1,7 @@
 package com.sample;
 
+import java.util.Objects;
+
 public class Book {
 
     private int id;
@@ -39,6 +41,19 @@ public class Book {
     @Override
     public String toString() {
         return "[" + id + "," + name + "," + price + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return id == book.id && price == book.price && Objects.equals(name, book.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, price);
     }
 
 }
