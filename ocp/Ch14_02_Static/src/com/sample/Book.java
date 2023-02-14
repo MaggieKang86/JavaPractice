@@ -40,7 +40,6 @@ public class Book {
         ++id;
         bookId = String.format("B%02d", id);  // B01 B02
         out.println("id:" + id + ",bookId: " + bookId);
-
     }
 
 }
