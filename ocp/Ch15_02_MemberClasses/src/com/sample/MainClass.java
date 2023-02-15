@@ -7,7 +7,7 @@ public class MainClass {
         OuterClass outc1 = new OuterClass();
         outc1.outerMethod();
         System.out.println("--------------");
-        // OuterClass.InnerClass inc = new OuterClass().InnerClass();
+        // OuterClass.InnerClass inc = new OuterClass.InnerClass();
 
         // 外部類別建立後才建立內部類別
         OuterClass outc2 = new OuterClass();
