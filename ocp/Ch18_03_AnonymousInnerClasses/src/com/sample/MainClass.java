@@ -56,6 +56,17 @@ public class MainClass {
         System.out.println("sa4：" + sa4.analyze("Java SE 8", "Java"));
         System.out.println("--------");
 
+        Analyzer<String> a1 = (s1, s2) -> s1.length() > s2.length();
+        System.out.println("a1: " + a1.analyze("Java", "Python"));
+
+        Analyzer<Integer> a2 = (i1, i2) -> i1 == i2;
+        System.out.println("a2: " + a2.analyze(10, 5));
+
+        // Analyzer<Double> a3 = (d1, d2) -> d1.compareTo(d2);  // compareTo 回傳值是 1/0/-1，故在設計上要有所調整
+        Analyzer<Double> a3 = (d1, d2) -> d1 - d2 > 0;
+        System.out.println("a3: " + a3.analyze(1.23, 1.2));
+
+
     }
 
 }
@@ -89,8 +100,6 @@ class StratWithAnalyzer implements StringAnalyzer{
         return targe.startsWith(search);
     }
 }
-
-
 
 //------------------------
 @ FunctionalInterface
