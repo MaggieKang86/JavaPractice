@@ -41,7 +41,7 @@ class SubClass extends SuperClass {
     }
 
     public SubClass(String item, int temp) {
-        /*
+        /*90
         super(item);
         System.out.println("連線資料庫...");
         System.out.println("驗證帳號...");
