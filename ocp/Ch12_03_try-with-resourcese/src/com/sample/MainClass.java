@@ -35,7 +35,7 @@ public class MainClass {
         System.out.println("其他程式....");
     }
 
-    private static void doTest() throws SQLException, IOException {ㄔ
+    private static void doTest() throws SQLException, IOException {
         double random = Math.random();
         if (random < 0.35) {
             throw new SQLException("無法開啟資料庫!");

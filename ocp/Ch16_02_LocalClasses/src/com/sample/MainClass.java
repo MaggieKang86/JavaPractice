@@ -3,14 +3,11 @@ package com.sample;
 public class MainClass {
 
     public static void main(String[] args) {
-
         OuterClass outc1 = new OuterClass();
         outc1.outerMethod(4);
-
     }
 
 }
-
 
 // --------------------
 
@@ -56,7 +53,5 @@ class OuterClass {
         inc.display();
 
     }
-
-
 
 }

@@ -30,7 +30,6 @@ public class MainClass {
 
 }
 
-
 // -----------------
 
 class UseAny <T> {

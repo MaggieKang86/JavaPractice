@@ -14,7 +14,6 @@ public class MainClass {
 
         for(int i = 0; i < switchs.length; i++){
             switchs[i] = true;
-
         }
 
     }
@@ -25,18 +24,15 @@ public class MainClass {
 
         Book book1 = new Book();
         Book book2 = new Book("Java SE");
-
         System.out.println("------------");
+
         for(boolean boo : switchs) {
             System.out.printf("%b | ", boo);
-
         }
-
         System.out.println("\n------------");
 
         int a = 5;
         System.out.println("1. a = " + a);
-
 
         // 區域區塊
         {

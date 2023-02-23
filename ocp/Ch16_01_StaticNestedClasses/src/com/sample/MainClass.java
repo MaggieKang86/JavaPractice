@@ -9,7 +9,6 @@ public class MainClass {
 
 }
 
-
 // 外部類別
 class OuterClass {
 
