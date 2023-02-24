@@ -27,12 +27,10 @@ public class MainClass {
         System.out.println();
         System.out.println("ID\tName");
         System.out.println("-----------");
-
         // 取出 map 中所有的資料
         for(String key : keys) {
             System.out.printf("%s\t%s%n", key, map.get(key));
         }
-
 
     }
 

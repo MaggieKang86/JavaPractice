@@ -42,5 +42,4 @@ public class Book {
         return "[" + id + ", " + name + ", " + price + ']';
     }
 
-
 }

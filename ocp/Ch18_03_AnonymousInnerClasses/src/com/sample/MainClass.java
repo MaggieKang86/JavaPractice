@@ -86,7 +86,6 @@ interface StringAnalyzer{
 }
 
 class ContainsAnalyzer implements StringAnalyzer{
-
     @Override
     public boolean analyze(String targe, String search) {
         return targe.contains(search);
@@ -94,7 +93,6 @@ class ContainsAnalyzer implements StringAnalyzer{
 }
 
 class StratWithAnalyzer implements StringAnalyzer{
-
     @Override
     public boolean analyze(String targe, String search) {
         return targe.startsWith(search);
@@ -113,10 +111,8 @@ interface ITest{
 
 // 宣告類別實作介面
 class CTest implements ITest{
-
     @Override
     public void doTest() {
         System.out.println("CTest doTest()...");
     }
-
 }
