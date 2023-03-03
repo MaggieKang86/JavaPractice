@@ -12,7 +12,7 @@ public class MainClass {
 
         String[] input = new String[3];
 
-        try(FileWriter fw = new FileWriter("log.txt");
+        try(FileWriter fw = new FileWriter("log.txt", true);
             BufferedWriter bw = new BufferedWriter(fw)) {  // 可做整行資料的讀取、亦有換行功能
 
             // 接受鍵盤資料
