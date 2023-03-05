@@ -3,12 +3,14 @@ package com.sample;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+// 該類別要序列化須 implements Serializable
 public class Student implements Serializable {
 
+    // transient -> 宣告不參與序列化
     private String name;
     private int total;
-    private double average;
-    private LocalDateTime localDateTime = LocalDateTime.now();
+    private transient double average;
+    private transient LocalDateTime localDateTime = LocalDateTime.now();
 
     public Student(String name) {
         this.name = name;
