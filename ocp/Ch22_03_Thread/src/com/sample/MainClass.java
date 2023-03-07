@@ -24,6 +24,7 @@ public class MainClass {
 // ------------------------
 
 class Car extends Thread {
+
     String name;
 
     public Car(String name){

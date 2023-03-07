@@ -11,7 +11,7 @@ public class MainClass {
 
         System.out.println("");
 
-        // FileSystem 是建立Path or 其他存取檔案系統的物件
+        // FileSystem 是建立 Path or 其他存取檔案系統的物件
         // Path -> 定義一個檔案 or 資料夾 or 目錄的路徑
         FileSystem fileSystem = FileSystems.getDefault();
         System.out.println("fileSystem：" + fileSystem);
