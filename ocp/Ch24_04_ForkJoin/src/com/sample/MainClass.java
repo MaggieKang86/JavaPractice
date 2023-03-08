@@ -1,6 +1,5 @@
 package com.sample;
 
-import javax.swing.*;
 import java.time.Duration;
 import java.time.Instant;
 
