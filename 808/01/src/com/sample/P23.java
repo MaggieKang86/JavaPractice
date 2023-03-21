@@ -1,6 +1,6 @@
 package com.sample;
 
-public class Test {
+public class P23 {
 
     public static void main(String[] args) {
 

@@ -1,7 +1,6 @@
 package com.sample;
 
-public class MainClass {
-
+public class P16 {
     public static void main(String[] args) {
 
         StringBuilder sb1 = new StringBuilder("Duke");
