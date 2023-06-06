@@ -55,6 +55,16 @@ ServletConfig
         <!---->
     </servlet>
     以上 <servlet></serlvet> 標籤中的 <init-param></init-param> 是初始化參數，這個初始化參數訊息會自動被 Tomcat 封裝到 ServletConfig 對象當中
+8.  ServletConfig 介面中有4個方法:
+    第1個方法:
+        public String getInitParameter(String name);
+    第2個方法:
+        public Enumeration<String> getInitParameterNames();
+    第3個方法:
+        public ServletContext getServletContext();
+    第4個方法:
+        public String getServletName();
+    以上的4個方法，在自己編寫的 Servlet class 中亦可使用 this 去調用。(此 Servlet 繼承了 GenericServlet )
 
 */
 
@@ -107,11 +117,11 @@ public class ConfigTestServlet extends GenericServlet {
         // 第一種方式: 通過 ServletConfig 對象獲取 ServletContext 對象
         ServletContext application = config.getServletContext();
         // 輸出
-        out.print("<br>" + application);
+        out.print("<br>" + application);  // org.apache.catalina.core.ApplicationContextFacade@19187bbb
 
         // 第二種方式: 通過 this 也可以獲取 ServletContext 對象
         ServletContext application2 = this.getServletContext();
-        out.print("<br>" + application2);
+        out.print("<br>" + application2);    // org.apache.catalina.core.ApplicationContextFacade@19187bbb
 
 
     }

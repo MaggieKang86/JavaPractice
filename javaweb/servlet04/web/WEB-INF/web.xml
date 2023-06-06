@@ -5,22 +5,20 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>aservlet</servlet-name>
-        <servlet-class>com.bjpowernode.javaweb.sevlet.AServlet</servlet-class>
-        <!-- <load-on-startup>0</load-on-startup> -->
+        <servlet-name>aserlvet</servlet-name>
+        <servlet-class>com.bjpowernode.javaweb.servlet.AServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>aservlet</servlet-name>
+        <servlet-name>aserlvet</servlet-name>
         <url-pattern>/a</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>bservlet</servlet-name>
-        <servlet-class>com.bjpowernode.javaweb.sevlet.BServlet</servlet-class>
-        <!-- <load-on-startup>1</load-on-startup> -->
+        <servlet-name>bserlvet</servlet-name>
+        <servlet-class>com.bjpowernode.javaweb.servlet.BServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>bservlet</servlet-name>
+        <servlet-name>bserlvet</servlet-name>
         <url-pattern>/b</url-pattern>
     </servlet-mapping>
 
