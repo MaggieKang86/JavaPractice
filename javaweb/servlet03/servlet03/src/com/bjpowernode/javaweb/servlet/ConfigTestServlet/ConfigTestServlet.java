@@ -103,6 +103,17 @@ public class ConfigTestServlet extends GenericServlet {
             System.out.println(name + "=" + value);
         }
 
+        // 如何獲取 ServletContext 對象?
+        // 第一種方式: 通過 ServletConfig 對象獲取 ServletContext 對象
+        ServletContext application = config.getServletContext();
+        // 輸出
+        out.print("<br>" + application);
+
+        // 第二種方式: 通過 this 也可以獲取 ServletContext 對象
+        ServletContext application2 = this.getServletContext();
+        out.print("<br>" + application2);
+
+
     }
 
 }
