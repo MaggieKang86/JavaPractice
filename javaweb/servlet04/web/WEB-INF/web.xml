@@ -4,6 +4,16 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <!-- 上下文的初始化參數，以下的配置訊息，可透過 ServletContext 對象來獲取 -->
+    <context-param>
+        <param-name>pageSize</param-name>
+        <param-value>10</param-value>
+    </context-param>
+    <context-param>
+        <param-name>startIndex</param-name>
+        <param-value>0</param-value>
+    </context-param>
+
     <servlet>
         <servlet-name>aserlvet</servlet-name>
         <servlet-class>com.bjpowernode.javaweb.servlet.AServlet</servlet-class>
