@@ -11,7 +11,12 @@ public class BServlet extends GenericServlet {
         PrintWriter out = response.getWriter();
         // 獲取 ServletContext 對象
         ServletContext application = this.getServletContext();
-        out.print("ServletContext對象是: " + application);
+        out.print("ServletContext對象是: " + application + "<br>");
+
+        // 在 BServlet 取出
+        Object userObj = application.getAttribute("userObj");
+        // 輸出到瀏覽器
+        out.print(userObj + "<br>");
 
         // log
         // 此 log 將自動記錄到 CATALINA_HOME/logs 內
