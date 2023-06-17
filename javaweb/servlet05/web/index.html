@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>http協議</title>
+</head>
+<body>
+
+<!-- 注意：瀏覽器上編寫的這個請求路徑還是要帶上應用的根路徑 -->
+<h1>get請求:</h1>
+<form action="/servlet05/getServlet(項目的根路徑)" method="get">
+    username<input type="text" name="username" /><br>
+    password<input type="password" name="username" /><br>
+    <input type="submit" value="login">
+</form>
+
+<h1>post請求:</h1>
+<form action="/servlet05/postServlet(項目的根路徑)" method="post">
+    username<input type="text" name="username" /><br>
+    password<input type="password" name="username" /><br>
+    <input type="submit" value="login">
+</form>
+
+</body>
+</html>
