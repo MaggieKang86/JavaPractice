@@ -11,7 +11,7 @@ public class Teacher {
     public class Student {
 
         // 描述老師的一 天
-        public void day(){
+        public void day() {
             getUp();
             washFace();
             eatBreakfast();
@@ -20,28 +20,29 @@ public class Teacher {
             sleep();
         }
 
-        public void getUp(){
+        public void getUp() {
             System.out.println("起床");
         }
 
-        public void washFace(){
+        public void washFace() {
             System.out.println("洗臉");
         }
 
-        public void eatBreakfast(){
+        public void eatBreakfast() {
             System.out.println("吃早餐");
         }
 
-        public void doSome(){
+        public void doSome() {
             System.out.println("老師正在課堂上授課，教授學生知識");
         }
 
-        public void eatDinner(){
+        public void eatDinner() {
             System.out.println("吃晚餐");
         }
 
-        public void sleep(){
+        public void sleep() {
             System.out.println("睡覺");
         }
 
+    }
 }
