@@ -12,4 +12,6 @@ public class HelloServlet extends HttpServlet {
     // 沒有提供 init 方法，那麼必然執行父類 HttpServlet 的 init 方法
     // HttpServlet 類中沒有 init 方法，會繼續執行 GenericServlet 類中的 init 方法
 
+    // 沒有提供 service 方法。 那麼必然執行父類 HttpServlet 類 service 方法
+
 }
