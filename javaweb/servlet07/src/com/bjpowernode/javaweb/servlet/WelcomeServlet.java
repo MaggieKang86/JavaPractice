@@ -13,7 +13,8 @@ public class WelcomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.print("<h1>welcome to bjpowernode!</h1>");
+        // org.apache.catalina.connector.RequestFacade@642e8513
+        out.print(request);
     }
 
 }

@@ -9,11 +9,20 @@ import java.io.PrintWriter;
 
 public class RequestTestServlet extends HttpServlet {
 
+//    @Override
+//    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        response.setContentType("text/html");
+//        PrintWriter out = response.getWriter();
+//        // org.apache.catalina.connection.RequestFacade@642e8513
+//        out.print(request);
+//    }
+
+
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        // org.apache.catalina.connection.RequestFacade@642e8513
-        out.print(request);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
+
     }
+
 }
