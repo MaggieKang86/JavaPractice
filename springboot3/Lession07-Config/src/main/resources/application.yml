@@ -1,0 +1,57 @@
+#編寫配置項 key:值
+#app.name
+app:
+  name: Lession07-yml
+  owner: changming01
+  port: 9000
+  security:
+    username: root
+    password: 123456
+
+#導入其他的配置文件  多個文件使用","隔開
+spring:
+  config:
+    import: conf/redis.yml,conf/db.yml
+  #激活某個配置文件（環境）
+  profiles:
+    active: dev
+
+#Bean
+myapp:
+  name: Lession07-BindBean
+  owner: changming01
+  port: 9000
+  security:
+    username: root
+    password: 123456
+
+
+#第三方對象，沒有源代碼
+security:
+  username: 123
+  password: hello
+
+
+#配置集合
+#數組和 list 一樣的，使用"-"表示一個成員
+names:
+  - lisi
+  - zhangsan
+  -
+#List<MyServer> servers
+servers:
+  - title: 阿魚發大財
+    ip: 202.12.39.1
+  - title: 倫倫愛吃醋
+    ip: 106.90.23.229
+
+#Map<String, User> users
+users:
+  user1:
+    name: 阿魚
+    sex: 女
+    age: 25
+  user2:
+    name: 倫倫
+    sex: 男
+    age: 21

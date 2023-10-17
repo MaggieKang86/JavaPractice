@@ -1,0 +1,62 @@
+
+MyBatis註解開發
+    第一步：加入mybatis的starter、mysql驅動
+    第二步：創建實體類 XXXPO、XXXEntity、XXXDomain
+    第三步：創建Mapper接口，在接口中定義方法，在方法的上面使用適合的註解
+        @Select：查詢，使用@Results和@tResult做結果映射
+        @Insert：新增
+        @Update：更新
+        @Delete：刪除
+    第四步：在啟動類上面，加入@MapperScan
+        @MapperScan(basePackages = "com.bjpowernode.mybatis.mapper")
+    第五步：application.properties
+        1.定義數據庫連接
+        2.mybatis設置
+            - 日誌
+            - 駝峰命名支持
+
+==============================================================================================================
+
+ResultMap：結果映射，將查詢結果中的列和實體Bean的屬性對應關係，通過在xml文件使用<resultMap>標籤定義映射關係，在其他的<select resultMap="xxx">
+註解中的映射
+    1. @Results 和 @Result
+    2. @ResultMap
+       @ResultMap使用方式：
+       第一種：先通過 @Results 定義列的映射關係，@ResultMap(value = "@Result的id")
+       第二種：在xml 中定義 <resultMap id = "xxx">, 在代碼中使用 @ResultMap(value = "xml的id")
+
+==============================================================================================================
+
+提供Sql語句，使用提供者
+@SelectProvider
+@InsertProvider
+@UpdateProvider
+@DeleteProvider
+
+提供者類：定義一個普通類，定義靜態方法，方法的返回值是要執行的sql語句
+
+==============================================================================================================
+
+關係： @One 一對一 / @Many 一對多
+
+==============================================================================================================
+
+MybatisAutoConfiguration: 自動配置類
+1.SqlSessionFactory: 能夠獲取 SqlSession
+2.SqlSessionTemplate: 用於執行sql語句，mybatis和spring整合時，使用的模板對象
+3.MapperFactoryBean: 創建Dao接口的代理對象
+
+==============================================================================================================
+
+連接池：連接的大小控制
+connections = ((cpu 核心數 * 2) + 磁碟數) 近似值，默認10
+
+==============================================================================================================
+
+事務：spring 的事務管理
+採用聲明式事務，註釋方式 @Transactional，在public方法的上面加入註解
+控制事務：1.傳播行為  2.隔離級別  3.唯讀  4.超時時間
+
+回滾規則：
+    1.業務方法發生 RuntimeException 和 Error 回滾事務
+    2.使用@Transactional的rollbackFor控制事務的回滾類型

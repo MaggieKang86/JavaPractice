@@ -1,0 +1,48 @@
+文件格式: properties(優先), yml(yaml)
+    內容: key = value
+    yml: key: value
+文件名稱: 默認 application
+環境對象: Environment: 表示抽象的所有key和value  方法 getProperty(key)
+
+多文件: 自定義獨立的配置文件，使用spring.config.import=文件路徑
+       導入多個文件
+
+多環境: 開發環境，測試環境，上線，特性，bug等等
+       名稱: application-profile.properties(yml) , 可以有多個環境文件
+       創建環境文件: 使用
+       spring:
+         config:
+           activate:
+             on-profile: 環境名稱
+
+       在 application 文件中激活某個環境
+       spring:
+         config:
+           activate:
+             on-profile: 環境名稱
+
+讀取數據: @Value("${key}"), 使用 Environmemt.getPropery("key")  獲取的是單個值(String. int. long, boolean)
+
+綁定 Bean: 用於多個屬性
+註解: @ConfigurationProperties
+     位置1: 在類的上面，需要有源代碼
+     位置2: 方法的上面，使用第三方對象，配合@Bean註解
+數據來源 application文件（properties, 或 yml）
+        指定數據來源@PropertySource(value = "xxx.properties")
+
+注意: 1)類中有無參數構造方法
+     2)屬性有setXXX方法
+     3)static屬性無效
+     4)使用 Bean 的構造方法也能創建對象，無需set方法
+
+@ConfigProperties 使用需要配合其他註解:
+1)@Configuration
+2)@EnableConfigurationProperties -> 推薦使用
+3)@ConfigurationPropertiesScan
+
+配置文件 application 名稱 和 位置 都是可以改變的
+application 配置文件的位置:
+1) 項目的根目錄下
+2) 項目根目錄的/config目錄
+3) resources/config
+4) resources目錄

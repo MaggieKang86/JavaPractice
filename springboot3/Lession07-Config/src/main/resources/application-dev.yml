@@ -1,0 +1,9 @@
+myapp:
+  memo: 這是開發環境配置文件
+
+#指定環境名稱
+spring:
+  config:
+    activate:
+      #當前文件起作用時的環境名稱
+      on-profile: dev

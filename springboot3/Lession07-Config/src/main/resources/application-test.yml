@@ -1,0 +1,8 @@
+myapp:
+  memo: 這是測試環境的配置文件
+
+spring:
+  config:
+    activate:
+      #當前文件起作用時的環境名稱
+      on-profile: test
