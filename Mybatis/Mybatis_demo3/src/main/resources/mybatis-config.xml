@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--
+        MyBatis 核心配置文件中，標籤的順序：
+        properties?, settings?, typeAliases?, typeHandlers?,
+        objectFactory?, objectWrapperFactory?, reflectorFactory?,
+        plugins?, environments?, databaseIdProvider?, mappers?
+    -->
+
+    <!-- 引入 properties 文件 -->
+    <properties resource="jdbc.properties"/>
+
+    <!-- 設置 MyBatis 的全局配置 -->
+    <settings>
+        <!-- 將 "_" 自動映射為駝峰，emp_name:empName -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 開啟延遲加載 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+
+    <!-- 設置類型別名 -->
+    <typeAliases>
+        <!--
+            typeAlias:設置某個類型的別名
+            屬性:
+                type:設置需要設置別名的類型
+                alias:設置某個類型的別名，若不設置該屬性，則該類名擁有默認的別名，即類名且不區分大小寫
+        -->
+        <!-- <typeAlias type="com.atguigu.mybatis.pojo.User" /> -->
+
+        <!-- 以包為單位，將包下所有的類型設置默認的類型別名，即類名且不區分大小寫 -->
+        <package name="com.atguigu.mybatis.pojo"/>
+    </typeAliases>
+
+    <!--
+        environments:配置多個連接數據庫的環境
+        屬性:
+            default:設置默認使用的環境id
+    -->
+    <environments default="development">
+        <!--
+            environment:配置某個具體的環境
+            屬性:
+                id:表示連接數據庫環境的唯一標識，不能重複
+        -->
+        <environment id="development">
+            <!--
+                transactionManager:設置事務管理方式
+                屬性:
+                    type="JDBC/MANAGED"
+                      JDBC:表示當前環境中，執行SQL時，使用的是 JDBC 中原生的事務管理方式，事務的提交或回滾需要手動處理
+                      MANAGED:被管理，例如 Spring
+            -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--
+                dataSource:配置數據源
+                屬性:
+                    type:設置數據源的類型
+                    type="POOL/POOLED/JNDI"
+                      POOL:表示使用數據庫連接池緩存數據庫連接
+                      POOLED:表示不使用數據庫連接池
+                      JNDI:表示使用上下文中的數據庫
+            -->
+            <dataSource type="POOLED">
+                <!-- 設置連接數據庫的驅動 -->
+                <property name="driver" value="${jdbc.driver}"/>
+                <!-- 設置連接數據庫的連接地址 -->
+                <property name="url" value="${jdbc.url}"/>
+                <!-- 設置連接數據庫的用戶名 -->
+                <property name="username" value="${jdbc.username}"/>
+                <!-- 設置連接數據庫的密碼 -->
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 引入映射文件 -->
+    <mappers>
+        <!-- <mapper resource="mappers/UserMapper.xml"/> -->
+        <!--
+            以包為單位引入映射文件
+            要求:
+            1.mapper 接口所在的包名要和映射文件的包一致
+            2.mapper 接口要和映射文件的名字一致
+        -->
+        <package name="com.atguigu.mybatis.mapper"/>
+    </mappers>
+</configuration>
